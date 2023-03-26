@@ -15,7 +15,7 @@
         combo_ntilde {
             timeout-ms = <50>;
             key-positions = <44 49>;
-            bindings = <&mt N TILDE2>;
+            bindings = <&mt RALT N>;
         };
     };
 };
