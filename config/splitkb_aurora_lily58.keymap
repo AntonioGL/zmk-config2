@@ -67,7 +67,7 @@
 
 			bindings = <
 &bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&trans	&trans	&trans	&trans	&trans	&trans
-&trans	&trans	&kp UNDER	&kp TILDE	&kp CARET	&kp PRCNT	&kp KP_EQUAL	&kp BACKSLASH	&kp KP_SLASH	&kp KP_ASTERISK	&kp KP_PLUS	&kp KP_MINUS
+&trans	&trans	&kp UNDER	&kp DQT	&kp CARET	&kp PRCNT	&kp KP_EQUAL	&kp BACKSLASH	&kp KP_SLASH	&kp KP_ASTERISK	&kp KP_PLUS	&kp KP_MINUS
 &trans	&kp EXCL	&kp QMARK	&kp AT	&kp HASH	&kp DLLR	&kp AMPS	&kp LPAR	&kp RPAR	&kp LBKT	&kp RBKT	&kp TILDE
 &trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&kp COLON	&kp LT	&kp GT	&kp LBRC	&kp RBRC	&kp PIPE
                       &kp BSPC	&trans	&trans	&kp SPACE	&kp ENTER	&kp RALT	&kp RSHFT	&kp DEL
