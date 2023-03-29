@@ -15,7 +15,6 @@
 
 
 
-
 / {
 
 	conditional_layers {
@@ -98,13 +97,13 @@
 // |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |                    |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
 // |------+------+------+------+------+------|                    |------+------+------+------+------+------|
 // |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-// | CLock|   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |      |
+// |      |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |      |
 // |------+------+------+------+------+------|                    |------+------+------+------+------+------|
 // |      |      |      |      |      |      |                    |      |      |      |      |      |      |
 // |      |   +  |   -  |   *  |   /  |   =  |-------.    ,-------| P Up | PrScr|  Up  |      | Home |      |
 // |------+------+------+------+------+------| [ Vol |    |    ]  |------+------+------+------+------+------|
 // |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-// |      |      |      |      |      | VMute|-------|    |-------| P Dn | Left | Down | Right|  End |      |
+// |      |      |      |C?LOCK|      | VMute|-------|    |-------| P Dn | Left | Down | Right|  End |      |
 // `-----------------------------------------/       /     \      \-----------------------------------------'
 //                   |      |      |      | /       /       \      \  |      |      |      |
 //                   |      |      |      |/       /         \      \ |      |      |      |
@@ -114,7 +113,7 @@
 &kp F1	&kp F2	&kp F3	&kp F4	&kp F5	&kp F6	&kp F7	&kp F8	&kp F9	&kp F10	&kp F11	&kp F12
 &trans	&kp N1	&kp N2	&kp N3	&kp N4	&kp N5	&kp N6	&kp N7	&kp N8	&kp N9	&kp N0	&trans  
 &trans	&kp KP_PLUS	&kp KP_MINUS	&kp KP_ASTERISK	&kp KP_SLASH	&kp EQUAL	&kp PG_UP	&kp PSCRN	&kp UP	&trans	&kp HOME	&trans
-&trans	&none	&none	&kp CLOCK	&none	&kp C_MUTE	&trans	&trans	&kp PG_DN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END	&trans
+&trans	&none	&none	&kp CLCK	&none	&kp C_MUTE	&trans	&trans	&kp PG_DN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END	&trans
 		&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans
 
 			>;
