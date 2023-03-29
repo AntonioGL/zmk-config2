@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -12,6 +11,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
+
 
 
 
@@ -34,8 +34,8 @@
 // |      |      |      |      |      |      |                    |      |      |      |      |      |      |
 // | ESC  |   1  |   2  |   3  |   4  |   5  |                    |   6  |   7  |   8  |   9  |   0  |   `  |
 // |------+------+------+------+------+------|                    |------+------+------+------+------+------|
-// |      |      |      |      |      |      |                    |      |      |      |      |      |      |
-// |  Tab |   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  -   |
+// | Tab /|      |      |      |      |      |                    |      |      |      |      |      |      |
+// | CLock|   Q  |   W  |   E  |   R  |   T  |                    |   Y  |   U  |   I  |   O  |   P  |  -   |
 // |------+------+------+------+------+------|                    |------+------+------+------+------+------|
 // |      |      |      |      |      |      |                    |      |      |      |      |      |      |
 // |LShift|   A  |   S  |   D  |   F  |   G  |-------.    ,-------|   H  |   J  |   K  |   L  |   ;  |BackSP|
@@ -49,8 +49,8 @@
 
 
 			bindings = <
-&kp ESC	&kp N1	&kp N2	&kp N3	&kp N4	&kp N5	&kp N6	&kp N7	&kp N8	&kp N9	&kp N0	&kp GRAVE
-&kp TAB	&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&kp I	&kp O	&kp P	&kp MINUS
+&kp ESC	&kp N1	&kp N2	&kp N3	&kp N4	&kp N5			&kp N6	&kp N7	&kp N8	&kp N9	&kp N0	&kp GRAVE
+&mt CAPSLOCK TAB	&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&kp I	&kp O	&kp P	&kp MINUS
 &kp LSHFT	&kp A	&kp S	&kp D	&kp F	&kp G	&kp H	&kp J	&kp K	&kp L	&kp SEMI	&kp BSPC
 &kp LCTRL	&kp Z	&kp X	&kp C	&kp V	&kp B	&trans	&trans	&kp N	&kp M	&kp COMMA	&kp DOT	&kp FSLH	&kp RALT
                         &kp LALT	&kp LGUI	&mo 1	&kp SPACE	&kp RET	&mo 2	&kp RSHFT	&kp DEL
@@ -103,7 +103,7 @@
 // |      |   +  |   -  |   *  |   /  |   =  |-------.    ,-------| P Up | PrScr|  Up  |      | Home |      |
 // |------+------+------+------+------+------| [ Vol |    |    ]  |------+------+------+------+------+------|
 // |      |      |      |      |      |      |       |    |       |      |      |      |      |      |      |
-// |      |      |C_LOCK|      |      | VMute|-------|    |-------| P Dn | Left | Down | Right|  End |      |
+// |      |      |      |      |      | VMute|-------|    |-------| P Dn | Left | Down | Right|  End |      |
 // `-----------------------------------------/       /     \      \-----------------------------------------'
 //                   |      |      |      | /       /       \      \  |      |      |      |
 //                   |      |      |      |/       /         \      \ |      |      |      |
@@ -113,7 +113,7 @@
 &kp F1	&kp F2	&kp F3	&kp F4	&kp F5	&kp F6	&kp F7	&kp F8	&kp F9	&kp F10	&kp F11	&kp F12
 &trans	&kp N1	&kp N2	&kp N3	&kp N4	&kp N5	&kp N6	&kp N7	&kp N8	&kp N9	&kp N0	&trans  
 &trans	&kp KP_PLUS	&kp KP_MINUS	&kp KP_ASTERISK	&kp KP_SLASH	&kp EQUAL	&kp PG_UP	&kp PSCRN	&kp UP	&trans	&kp HOME	&trans
-&trans	&kp CLCK	&none	&none	&none	&kp C_MUTE	&trans	&trans	&kp PG_DN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END	&trans
+&trans	&none	&none	&none	&none	&kp C_MUTE	&trans	&trans	&kp PG_DN	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END	&trans
 		&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans
 
 			>;
