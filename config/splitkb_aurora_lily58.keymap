@@ -13,8 +13,6 @@
 #include <dt-bindings/zmk/rgb.h>
 
 
-
-
 / {
 
 	conditional_layers {
