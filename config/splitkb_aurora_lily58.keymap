@@ -21,12 +21,6 @@
         };
     };
 
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <20>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,7 +51,9 @@
                            &kp LALT  &kp LGUI  &mo 1   &kp SPACE    &kp RET  &mo 2   &kp RSHFT  &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
@@ -87,7 +83,9 @@
                                   &trans   &trans     &trans     &trans    &trans  &trans       &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         raise_layer {
@@ -112,12 +110,14 @@
             bindings = <
 &kp F1  &kp F2       &kp F3        &kp F4           &kp F5        &kp F6                        &kp F7     &kp F8     &kp F9    &kp F10    &kp F11   &kp F12
 &trans  &kp N1       &kp N2        &kp N3           &kp N4        &kp N5                        &kp N6     &kp N7     &kp N8    &kp N9     &kp N0    &trans
-&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL                     &kp PG_UP  &kp PSCRN  &kp UP    &trans     &kp HOME  &trans
+&trans  &kp KP_PLUS  &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL                     &kp PG_UP  &kp PSCRN  &kp UP    &none      &kp HOME  &trans
 &trans  &none        &kp CLCK      &none            &none         &kp C_MUTE  &trans    &trans  &kp PG_DN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &trans
                                    &trans           &trans        &trans      &trans    &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         adjust_layer {
@@ -141,14 +141,16 @@
             //
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bl BL_ON   &none          &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_ON   &trans
-&trans      &none         &none         &none         &none         &none                           &bl BL_OFF  &none          &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_OFF  &trans
-&trans      &out OUT_USB  &none         &none         &none         &none                           &bl BL_INC  &bl BL_CYCLE   &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &trans
-&trans      &out OUT_BLE  &none         &none         &none         &none         &trans    &trans  &bl BL_DEC  &bl BL_SET 30  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bl BL_ON   &none          &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_ON   &none
+&none       &none         &none         &none         &none         &none                           &bl BL_OFF  &none          &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_OFF  &none
+&none       &out OUT_USB  &none         &none         &none         &none                           &bl BL_INC  &bl BL_CYCLE   &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &none
+&none       &out OUT_BLE  &none         &none         &none         &none         &trans    &trans  &bl BL_DEC  &bl BL_SET 30  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &none
                                         &trans        &trans        &trans        &trans    &trans  &trans      &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
     };
 };
