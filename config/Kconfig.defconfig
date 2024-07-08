@@ -50,3 +50,11 @@ endchoice
 endif # LVGL
 
 endif # SHIELD_SPLITKB_AURORA_LILY58_LEFT || SHIELD_SPLITKB_AURORA_LILY58_RIGHT
+
+config ZMK_LAYER_HOLD_TAPPING_MS
+    int "Layer hold tapping term (ms)"
+    default 0
+
+config ZMK_LAYER_TAPPING_TERM_MS
+    int "Layer tapping term (ms)"
+    default 200
