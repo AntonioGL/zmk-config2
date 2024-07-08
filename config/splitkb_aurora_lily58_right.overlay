@@ -9,6 +9,7 @@
 / {
     chosen {
         zmk,kscan = &kscan;
+        zmk,backlight = &backlight;
     };
 
     kscan: kscan {
@@ -42,4 +43,10 @@
 
 &default_transform {
     col-offset = <6>;
+};
+
+&backlight {
+    status = "okay";
+    label = "ZMK_BACKLIGHT";
+    gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;  // Ajusta el pin según tu hardware
 };
