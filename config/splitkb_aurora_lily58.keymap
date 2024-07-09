@@ -24,11 +24,6 @@
 
     };
 
-&kscan {
-    debounce-press-ms = <3>;
-    debounce-release-ms = <3>;
-};
-
     keymap {
         compatible = "zmk,keymap";
 
