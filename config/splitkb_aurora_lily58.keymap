@@ -21,20 +21,19 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
-    };
-
-/ {
-    behaviors {
+behaviors {
         lh: layer_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_HOLD";
             #binding-cells = <2>;
-            tapping-term-ms = <200>; /* Ajusta este valor si es necesario */
-            quick-tap-ms = <0>; /* Puedes ajustar este valor según tu preferencia */
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
+
     };
+
 
     keymap {
         compatible = "zmk,keymap";
