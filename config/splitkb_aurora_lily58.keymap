@@ -23,18 +23,6 @@
         };
     };
 
- behaviors {
-        lh: layer_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HOLD";
-            #binding-cells = <2>;
-            tapping-term-ms = <0>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
