@@ -31,7 +31,6 @@
             tapping-term-ms = <0>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            hold-while-undecided-linger;
             bindings = <&mo>, <&kp>;
         };
     };
