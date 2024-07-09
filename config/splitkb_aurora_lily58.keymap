@@ -22,7 +22,9 @@
             then-layer = <3>;
         };
 
-behaviors {
+    };
+
+ behaviors {
         lh: layer_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_HOLD";
@@ -32,9 +34,7 @@ behaviors {
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
-
     };
-
 
     keymap {
         compatible = "zmk,keymap";
